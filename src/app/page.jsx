@@ -1,11 +1,21 @@
-import Image from "next/image";
 import "./globals.css";
 import About from "@/components/about";
+import Hero from "@/components/Hero";
+import Header from "@/components/Header";
+import Services from "@/components/Services";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <>
       <About />
+      <h1 className="">
+        <Hero />
+        <Header />
+        <Services />
+        {/* <Hero /> */}
+      </h1>
     </>
   );
-}
+};
+
+export default HomePage;
