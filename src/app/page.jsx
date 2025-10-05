@@ -1,10 +1,15 @@
-import Image from "next/image";
-import "./globals.css";
+'use client';
+import React from "react";
+import Projects from "../components/Projects";
+import HeroSection from "@/components/WhyUs";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <>
-      <h1>hello world</h1>
-    </>
+    <main>
+      <HeroSection/>
+      <Projects />
+    </main>
   );
-}
+};
+
+export default HomePage;
