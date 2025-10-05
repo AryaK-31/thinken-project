@@ -1,10 +1,9 @@
-import Image from "next/image";
 import "./globals.css";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import Services from "@/components/Services";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <>
       <h1 className="">
@@ -15,4 +14,6 @@ export default function Home() {
       </h1>
     </>
   );
-}
+};
+
+export default HomePage;
