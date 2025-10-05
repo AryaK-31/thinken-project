@@ -82,7 +82,7 @@ const Header = () => {
     ];
 
     return (
-        <div className="relative w-full flex flex-col md:flex-row items-center justify-center overflow-hidden bg-black">
+        <div className="relative w-full flex flex-col md:flex-row items-center justify-center overflow-hidden bg-gradient-to-t from-black via-black to-cyan-800 -mt-2">
 
             {/* LEFT SECTION — Text + 3D */}
             <div className="relative flex flex-col items-center justify-center w-full md:w-1/2 h-[50vh] md:h-[90vh] text-center md:text-left ">
@@ -131,13 +131,13 @@ const Header = () => {
             {/* RIGHT SECTION — 2x2 Grid of 3D Cards */}
             <div className="z-10 w-full md:w-1/2 flex flex-col items-center py-6 px-4 md:py-[1.5rem] md:px-[4rem]">
                 <motion.h2
-                    className="text-xl sm:text-2xl text-center font-semibold mb-4"
+                    className="text-xl sm:text-2xl text-center font-semibold mb-4 font-orbitron uppercase"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.7 }}
                 >
-                    WHAT DO WE DO?
+                    Industry Specializations
                 </motion.h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
                     {cards.map((card, i) => (

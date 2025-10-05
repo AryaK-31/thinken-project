@@ -160,7 +160,7 @@ function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         viewport={{ once: false, amount: 0.3 }}
                     >
-                        Shop Now
+                        Explore Now
                     </motion.button>
 
                     <div className="container mx-auto mt-[2rem]">
